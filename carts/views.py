@@ -42,13 +42,17 @@ def cart(request, total=0, quantity=0, cart_items=None):
         for cart_item in cart_items:
             total += (cart_item.product.price * cart_item.quantity)
             quantity += cart_item.quantity
+        iva = total * 0.21
+        grand_total = total + iva
     except ObjectNotExist:
         pass 
 
     context = {
         'total': total,
         'quantity': quantity,
-        'cart_items': cart_items
+        'cart_items': cart_items,
+        'iva': iva,
+        'grand_total': grand_total,
     }
 
     return render(request, 'store/cart.html', context)
