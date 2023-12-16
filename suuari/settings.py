@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     'carts',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -144,9 +145,10 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-#Configure email host
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'josueb.rangel.montiel@gmail.com'
-EMAIL_HOST_PASSWORD = '' #My password
+#SMTP Configuration
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '627f22a85143f8'
+EMAIL_HOST_PASSWORD = 'e44045201d9fb1'
+EMAIL_PORT = '2525'
 EMAIL_USE_TLS = True
+
