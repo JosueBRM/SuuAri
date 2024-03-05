@@ -1,2 +1,2 @@
 # SuuAri
- Final project Fullstack II
+ Web App Store using python(django), bootstrap(css), mysql
