@@ -1,2 +1,2 @@
 # SuuAri
- Final project Fullstack II
+ Web App Store with CRUD using python(django) and Boostrap(css)
